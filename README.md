@@ -1,27 +1,26 @@
+# SV Ervens-Werner Landingpage
 
-<h2 align="center"> Google Sign in to Discord </h2>
+Professionelle, responsive Landingpage für das Sachverständigenbüro **SV Ervens-Werner** mit Fokus auf Hochvolt-, Batterie- und Ladeinfrastrukturschäden in der Elektromobilität.
 
-SYNOPSIS
+## Inhalte
 
-Uses Powershell and HTML to create a fake google login page which catches login credentials and sends them to a webhook.
+- Moderne Startseite mit Hero-Bereich und klaren Call-to-Actions
+- Zielgruppenkacheln für Versicherungen, Privatpersonen sowie Gerichte & Anwälte
+- Bereiche für Über mich, Fachgebiete, Leistungen, Ablauf und Kontakt
+- DSGVO-freundliches Kontaktformular ohne Tracking-Cookies
+- SEO-relevante Meta-Tags und semantische HTML-Struktur
+- Responsive Layout für Smartphone, Tablet und Desktop
 
-USAGE
+## Lokale Vorschau
 
-1. Replace YOUR_WEBBHOOK_HERE with your webhook
-2. Run script on target system.
-
-## Inventur-Oberfläche
-
-`inventory_app.py` ist eine kleine Tkinter-Oberfläche für eine lokale Bestandsaufnahme. Sie erlaubt das Anlegen von Artikeln mit Menge, Standort und Notizen. Die Liste kann als CSV exportiert werden.
-
-### Ausführen
+Die Seite ist statisch und benötigt keine Build-Tools:
 
 ```bash
-python inventory_app.py
+python -m http.server 8000
 ```
 
-### Als Windows-EXE erstellen
+Anschließend im Browser öffnen:
 
-1. PyInstaller installieren: `pip install pyinstaller`
-2. EXE bauen: `pyinstaller --onefile --noconsole inventory_app.py`
-3. Die fertige Datei liegt danach im Unterordner `dist/`.
+```text
+http://localhost:8000
+```
